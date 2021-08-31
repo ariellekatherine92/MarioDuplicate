@@ -1,4 +1,9 @@
-
+add([
+  sprite("background2"),
+  scale(width() /240, height() /240),
+  origin("topleft"),
+  // fullscreen: true,
+]);
 
 
 add([

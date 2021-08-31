@@ -36,6 +36,7 @@ kaboom({
   plugins: [ peditPlugin, asepritePlugin, kbmspritePlugin ],
 });
 loadSprite("background", "sprites/background.jpg");
+loadSprite("background2", "sprites/background2.jpg");
 loadSprite("block", "sprites/block.png");
 loadSprite("blue-block", "sprites/blue-block.png");
 loadSprite("blue-brick", "sprites/blue-brick.png");
@@ -72,7 +73,8 @@ scene("main", (args = {}) => {
 add([
   sprite("background"),
   scale(width() /240, height() /240),
-  origin("topleft")
+  origin("topleft"),
+  // fullscreen: true,
 ]);
 
 
@@ -267,7 +269,12 @@ player.collides('pipe', () => {
 })
 });
 scene("startscreen", (args = {}) => {
-
+add([
+  sprite("background2"),
+  scale(width() /240, height() /240),
+  origin("topleft"),
+  // fullscreen: true,
+]);
 
 
 add([
