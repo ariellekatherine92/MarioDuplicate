@@ -1,5 +1,5 @@
 add([
-  sprite("background2"),
+  sprite("background4"),
   scale(width() /240, height() /240),
   origin("topleft"),
   // fullscreen: true,

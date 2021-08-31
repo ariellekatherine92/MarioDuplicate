@@ -36,7 +36,7 @@ kaboom({
   plugins: [ peditPlugin, asepritePlugin, kbmspritePlugin ],
 });
 loadSprite("background", "sprites/background.jpg");
-loadSprite("background2", "sprites/background2.jpg");
+loadSprite("background4", "sprites/background4.jpg");
 loadSprite("block", "sprites/block.png");
 loadSprite("blue-block", "sprites/blue-block.png");
 loadSprite("blue-brick", "sprites/blue-brick.png");
@@ -270,7 +270,7 @@ player.collides('pipe', () => {
 });
 scene("startscreen", (args = {}) => {
 add([
-  sprite("background2"),
+  sprite("background4"),
   scale(width() /240, height() /240),
   origin("topleft"),
   // fullscreen: true,
