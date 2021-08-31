@@ -1,3 +1,6 @@
+
+
+
 add([
     text("Mario Built With Kaboomjs", 0),
     pos(50, 50),
@@ -21,3 +24,6 @@ add([
 mouseClick(() => {
   go('main');
 });
+
+
+

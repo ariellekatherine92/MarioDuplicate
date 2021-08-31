@@ -1,3 +1,17 @@
+// const k = kaboom();
+
+// kaboom({
+//   scale: 2,
+//   clearColor: [0, 0, 0, 0],
+// });
+
+add([
+  sprite("background"),
+  scale(width() /240, height() /240),
+  origin("topleft")
+]);
+
+
 const MOVE_SPEED = 120
 const JUMP_FORCE = 360
 const BIG_JUMP_FORCE = 550
@@ -38,6 +52,7 @@ const maps = [
 const levelCfg = {
   width: 20,
   height: 20,
+  '' : [sprite('background'), solid()],         
   '=' : [sprite('block'), solid()],
   'x' : [sprite('brick'), solid()],
   '$' : [sprite('coin'), 'coin'],
